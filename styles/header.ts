@@ -17,7 +17,8 @@ export const Container = styled.div`
   }
 
   img.logo{
-    height: ${HEADER_SIZE * .8}px;
+    height: ${HEADER_SIZE * .5}px;
+    margin-right: 10px;
     cursor: pointer;
   }
 
@@ -81,6 +82,9 @@ export const Container = styled.div`
 
   button.hamburguer{
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media(min-width: 768px){
       display: none;
@@ -166,7 +170,7 @@ export const Menu = styled.div`
       transition: background-color .2s;
 
       :hover{
-        background-color: rgba(0, 0, 0, .3);
+        background-color: transparent;
       }
     }
 
